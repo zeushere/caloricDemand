@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caloric demand Jakub Ruchel & Kacper Roda</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">    
+</head>
+
+<body onload="onLoad()">
+
+<h1>Caloric demand calculator</h1>
+<br><br><br>
+
+<div id="data">
+    
+    <form id="calculator-form">
+
+        <div id = "genderGroup">
+
+            <input type="radio" name="gender" id="genderMale" class="gender" value="male" checked>
+    
+            <label for="genderMale">
+                <span class="genderButton">Male</span>
+            </label>
+
+            <input type="radio" name="gender" id="genderFemale" class="gender" value="female">
+    
+            <label for="genderFemale">
+                <span class="genderButton">Female</span>
+    
+            </label>
+        </div>
+
+        <div id="age">
+        
+            <label for="ageInput">Age:</label>
+            <input type="number" name="ageInput" id="ageInput" class = "typingInput">
+        
+            <span id = "errorAge" class = "error"></span>
+        </div>
+
+        <br>
+
+        <div id="heightWeight">
+            <div id="heightChecked">
+        
+                <label><input type="radio" name="heightChecked" id="m" value="m" checked>Meters</label>
+                <label><input type="radio" name="heightChecked" id="feet" value="feet">Feet</label>
+        
+            </div>
+        
+            <label for="heightInput">Height:</label>
+            <input type="text" name="heightInput" class = "typingInput" id="heightInput" pattern="[1-9][0-9]*([.,][0-9]+)*">
+        
+            <span id = "errorHeight" class = "error"></span>
+
+            <div id="weightChecked">
+        
+            <br>
+        
+            <label><input type="radio" name="weightChecked" id="kg" value="kg" checked>Kilogrammes</label>
+            <label><input type="radio" name="weightChecked" id="lb" value="lb">Pounds</label>
+
+        </div>
+
+            <label for="weightInput">Weight:</label>
+            <input type="number" name="weightInput" class = "typingInput" id="weightInput" pattern="[1-9][0-9]*([.,][0-9]+)*">
+        
+            <span id = "errorWeight" class = "error"></span>
+        
+        <br><br>
+        
+        <div id="activityLevel">
+
+            <label for="activitySelection">Select your activity level: </label>
+            
+            <br>
+        
+            <select name="activitySelection" id="activitySelection" class="activitySelection">
+            
+                <option id="inactive" value="inactive">Inactive: little or no exercise</option>
+            
+                <option selected id="slightActive" value="slightActive">Slightly active: light exercise or sport 1-3
+                    times a week
+                </option>
+            
+                <option id="moderatelyActive" value="moderatelyActive">Moderately active: moderate exercise or sport 3-5
+                    times a week
+                </option>
+            
+                <option id="veryActive" value="veryActive">Very active: heavy exercise or sports 6-7 times a week
+                </option>
+            
+                <option id="superActive" value="superActive">Super active: very heavy exercise or sports and physical
+                    work
+                </option>
+
+            </select>
+        
+        </div>
+
+        <br>
+
+        <div id="goal">
+            <label for="goalSelect">Select your goal:</label><br>
+
+            <select name="goalSelection" id="goalSelection" class = "goalSelection">
+
+                <option selected id="weightLose" value="weightLoss">I want to lose weight</option>
+
+                <option id="weightKeep" value="weightKeep">I want to keep my weight</option>
+
+                <option id="weightGain" value="weightGain">I want to gain weight</option>
+
+            </select>
+        </div>
+
+        <div id="buttonsContener">
+            <p>
+                <input class="buttons" id = "calculate" onclick= "calculateClicked()"
+                       type="button"
+                       value="Calculate my caloric demand">
+
+                <input type="reset" value="Clear" class="buttons" id="reset" onclick="clearClicked()">
+            </p>
+        
+        </div>
+    </div>
+
+    </form>
+
+<div id = "bmi_display">
+</div>
+
+<div id="kcal_display">
+</div>
+
+<div id = "macronutrients_display">
+</div>
+
+</div>
+
+</body>
+</html>

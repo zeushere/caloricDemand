@@ -1,0 +1,160 @@
+h1
+{
+    text-align: center;
+    display: block;
+    position: static;
+}
+
+body
+{
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/22/08/49/cute-2528119_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center center;
+    font-size: 1.1rem;
+}
+
+input {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    position: static;
+    display: inline;
+  }
+  
+  #calculate {
+    background: royalblue;
+    width: 300px;
+    height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px 5px 5px 0px;
+    position: static;
+    display: inline;
+    text-align: center;
+    
+  }
+
+  #reset
+  {
+    background: royalblue;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px 5px 5px 0px;
+    position: static;
+    display: inline;
+    text-align: center;
+  }
+
+  #back
+  {
+    background:blueviolet;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px 5px 5px 0px;
+    position: static;
+    display: inline;
+    text-align: center;
+  }
+
+  
+
+  * {
+    font-family: Hack, monospace;
+    outline: none;
+  }
+
+  #bmi_display
+  {
+      color:red;
+      font-size: 1.5rem;
+      position: static;
+      display: inline;
+  }
+
+  #kcal_display
+  {
+      font-size: 1.5rem;
+      color:blue;
+      position: static;
+      display: inline;
+  }
+
+  #macronutrients_display
+  {
+      font-size: 1.5rem;
+      color:fuchsia;
+      position: static;
+      display: inline;
+  }
+
+
+  input:active, input.typingInput:focus
+  {
+    background-color: #f2ba11;
+    border: 2px solid blue;
+    outline-width: 0;
+    position: static;
+    display: inline;
+    
+  }
+
+  #calculate:active
+  {
+      background-color: #f2ba11;
+      border: 2px solid blue;
+      outline-width: 0;
+      position: static;
+      display: inline;
+      color:black;
+  }
+
+  #reset:active
+  {
+      background-color: #f2ba11;
+      border: 2px solid blue;
+      outline-width: 0;
+      position: static;
+      display: inline;
+      color:black;
+  }
+
+  #back:active
+  {
+      background-color: #f2ba11;
+      border: 2px solid blue;
+      outline-width: 0;
+      position: static;
+      display: inline;
+      color:black;
+  }
+
+    input:active, input.typingInput:focus
+    {
+      background-color: #f2ba11;
+      border: 2px solid blue;
+      outline-width: 0;
+      position: static;
+      display: inline;
+      
+    }
+
+  .error
+  {
+    font-size: 1.1rem;
+    position: static;
+    display: inline;
+    font-weight: bold;
+    color:red;
+  }
